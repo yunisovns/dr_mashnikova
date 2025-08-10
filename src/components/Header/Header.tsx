@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Logo } from "./Logo/Logo";
 import { NavigationMenu } from "@components/NavigationMenu/NavigationMenu";
-
-const Header = () => {
+import { Menu } from "lucide-react";
+  
+export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -15,11 +16,11 @@ const Header = () => {
         <Logo />
         <div className="md:hidden">
           <button
-            className="text-3xl bg-black text-white px-3 py-2 rounded"
+            className="text-3xl text-[#E6BE8A] px-3 py-2 rounded"
             onClick={toggleMenu}
             aria-label="Открыть меню"
           >
-            ☰
+            <Menu />
           </button>
         </div>
 
@@ -37,4 +38,3 @@ const Header = () => {
   );
 };
 
-export default Header;

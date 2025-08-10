@@ -10,7 +10,7 @@ export const Contacts = () => {
   return (
     <section
       id="contacts"
-      className="bg-white py-12 px-6 md:px-10 text-gray-800"
+      className="bg-white py-12 px-6 md:px-10 text-gray-800 scroll-m-16"
     >
       <div className="max-w-xl mx-auto rounded-2xl border border-gray-200 shadow-md p-8 space-y-6">
         <h3 className="text-3xl font-bold text-center text-gray-600 ">
